@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcom to Poita Anime Club</title>
+	<style type="text/css">
+		input::-webkit-outer-spin-button,
+    	input::-webkit-inner-spin-button {-webkit-appearance: none;}
+    	input[type="number"]{-moz-appearance: textfield;}
+    	body { margin: 0; }
+    	html { font-size: 100px; }
+    	body, html { height: 100%; }
+	</style>
+	<script type="text/javascript">
+	    if(browserRedirect()){
+        document.querySelector('html').style.fontSize =  window.innerWidth*100/750 + 'px';}
+	</script>
+</head>
+<body>
+	<form method="post">
+		<input type="text" placeholder="Username" name="username" autocomplete="off">
+		<input type="password" placeholder="Password" name="password" autocomplete="off">
+		<input type="email" placeholder="E-mail" name="user_email" autocomplete="off">
+		<input type="number" placeholder="Student ID" name="ID" autocomplete="off">
+		<input type="number" placeholder="Phone number" name="phone" autocomplete="off">
+		<input type="text" placeholder="Name" name="name" autocomplete="off">
+		<input type="radio" name="gender"><label>男</label>
+		<input type="radio" name="gender"><label>女</label>
+		<br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
