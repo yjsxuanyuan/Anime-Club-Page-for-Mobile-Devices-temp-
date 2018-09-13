@@ -1,0 +1,17 @@
+@font-face {
+  font-family: pfm;
+  src: url(font/PingFangMedium.ttf);
+}
+@font-face {
+  font-family: pfh;
+  src: url(font/PingFangHeavy.ttf);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]{-moz-appearance: textfield;}
+
+body { margin: 0; }
+html { font-size: 100px; }
+body, html { height: 100%; }
+.app { width: 7.5rem; height: 100%; background-color: aqua;}
+* { font-family: pfm; }

@@ -1,0 +1,8 @@
+.sign-up { position: absolute; width: 5.5rem; height: 7.5rem; font-size: 14px; top: 0; bottom: 0; left: 0; right: 0; margin: auto; box-shadow: 0px 0px 5px #949494; padding-top: .3rem; box-sizing: border-box; background-color: rgba(255,255,255,0.77); border-radius: 4px; }
+.sign-up-info { position: relative; width: 90%; text-align: center; display: flex; flex-wrap: wrap;  margin: 0 auto;}
+.one-type { flex: 0 0 100%; height: .8rem; border: none; outline: none; background: none; border-bottom: 1px solid #9E9E9E; font-size: 15px;}
+.name { flex: 0 0 50%; }
+.two-type { flex: 0 0 17%; height: .9rem; line-height: .9rem;}
+.radio { background-color: none; }
+label { line-height: .8rem; }
+.submit-button { margin-top: .5rem; flex: 0 0 100%; height: .75rem; background: none; border: none; outline: none; background-color: orange; border-radius: 4px; font-size: 16px; box-shadow: 0px 0px 2px orange;}

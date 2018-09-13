@@ -5,31 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Welcom to Poita Anime Club</title>
-	<style type="text/css">
-		input::-webkit-outer-spin-button,
-    	input::-webkit-inner-spin-button {-webkit-appearance: none;}
-    	input[type="number"]{-moz-appearance: textfield;}
-    	body { margin: 0; }
-    	html { font-size: 100px; }
-    	body, html { height: 100%; }
-	</style>
+  <link rel="stylesheet" type="text/css" href="initial.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript">
-	    if(browserRedirect()){
-        document.querySelector('html').style.fontSize =  window.innerWidth*100/750 + 'px';}
+        document.querySelector('html').style.fontSize =  window.innerWidth*100/750 + 'px';
 	</script>
 </head>
 <body>
-	<form method="post">
-		<input type="text" placeholder="Username" name="username" autocomplete="off">
-		<input type="password" placeholder="Password" name="password" autocomplete="off">
-		<input type="email" placeholder="E-mail" name="user_email" autocomplete="off">
-		<input type="number" placeholder="Student ID" name="ID" autocomplete="off">
-		<input type="number" placeholder="Phone number" name="phone" autocomplete="off">
-		<input type="text" placeholder="Name" name="name" autocomplete="off">
-		<input type="radio" name="gender"><label>男</label>
-		<input type="radio" name="gender"><label>女</label>
-		<br>
-		<input type="submit" name="submit">
-	</form>
+  <div class="app">
+    <div class="sign-up">
+      <form method="post" class="sign-up-info">
+        <input class="one-type" type="text" placeholder="Username" name="username" autocomplete="off">
+        <input class="one-type" type="password" placeholder="Password" name="password" autocomplete="off">
+        <input class="one-type" type="email" placeholder="E-mail" name="user_email" autocomplete="off">
+        <input class="one-type" type="number" placeholder="Student ID" name="ID" autocomplete="off">
+        <input class="one-type" type="number" placeholder="Phone number" name="phone" autocomplete="off">
+        <input class="one-type name" type="text" placeholder="Name" name="name" autocomplete="off">
+        <div class="two-type"><input class="radio" type="radio" name="gender"><label>男</label></div>
+        <div class="two-type"><input class="radio" type="radio" name="gender"><label>女</label></div>
+        <input class="submit-button" type="submit" name="submit" value="注册">
+      </form>
+    </div>
+  </div>
 </body>
 </html>
