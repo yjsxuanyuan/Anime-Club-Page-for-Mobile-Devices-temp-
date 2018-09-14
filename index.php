@@ -21,7 +21,7 @@
 </head>
 <body>
 	<?php
-
+  header("content-type:text/html;charset=utf-8");
   $con = mysqli_connect("localhost", "root", "123", "poita_anime_club");
   if (!$con) {
     die('Could not connect: ' . mysql_error());
