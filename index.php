@@ -160,7 +160,7 @@
         <input class="one-type" type="text" placeholder="E-mail" name="email" autocomplete="off" value="<?php echo $email;?>">
         <input class="one-type" type="text" placeholder="Student ID" name="ID" autocomplete="off" value="<?php echo $ID;?>">
         <input class="one-type" type="text" placeholder="Phone number" name="phone" autocomplete="off" value="<?php echo $phone;?>">
-        <input class="one-type insi" type="text" name="insi" placeholder="Insititute(like: ZJUI-ECE)" autocomplete="off" value="<?php echo $insi;?>"></input>
+        <input class="one-type insi" type="text" name="insi" placeholder="Insititute(ZJUI-ECE)" autocomplete="off" value="<?php echo $insi;?>"></input>
         <select class="year" name="year">
           <option value="2018">2018</option>
           <option value="2017">2017</option>
