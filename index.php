@@ -27,6 +27,7 @@
     die('Could not connect: ' . mysql_error());
   }
 	// 定义变量并默认设置为空值
+  mysqli_query("set names 'utf8'",$con);
 	$usernameErr = $emailErr = $genderErr  = $IDErr = $nameErr = $passwordErr = $phoneErr = $insiErr = "";
 	$username = $email = $gender = $ID  = $password = $name = $phone = $sql = $insi = "";
 
