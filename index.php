@@ -10,13 +10,14 @@
 	<script type="text/javascript">
         document.querySelector('html').style.fontSize =  window.innerWidth*100/750 + 'px';
         window.onload=()=>{
-        var iframe=document.getElementById("ifr");
-    	iframe.onload= function () {
+          var iframe=document.getElementById("ifr");
+    	    iframe.onload= function () {
         	var bodycontent=iframe.contentDocument.body.innerHTML;
-        	console.log(bodycontent);
         //处理获取到的内容；
-    	}}
-
+    	  }}
+        function sub() {
+          document.getElementById('sign-up').submit();
+        }
 	</script>
 </head>
 <body>
@@ -170,9 +171,9 @@
         <input class="one-type name" type="text" placeholder="Name" name="name" autocomplete="off" value="<?php echo $name?>">
         <div class="two-type"><input class="radio" type="radio" name="gender" value="male" <?php if (isset($gender) && $gender=="male") echo "checked";?>><label>男</label></div>
         <div class="two-type"><input class="radio" type="radio" name="gender" value="female" <?php if (isset($gender) && $gender=="female") echo "checked";?>><label>女</label></div>
-        <input class="submit-button" type="submit" name="submit" value="注 册">
+        <input class="submit-button" type="button" value="注 册" onclick="sub()">
       </form>
-      <iframe name='ifr' id="ifr" style='display: none;'></iframe>
+      <iframe name='ifr' id="ifr" style="display: none"></iframe>
     </div>
   </div>
   <?php
@@ -187,7 +188,7 @@
   	else if ($username) { 
       $sql = "INSERT members(name, studentID, email, phone, gender, username, password, insititute, year) VALUES('$name','$ID','$email','$phone','$gender','$username','$password','$insi','$year');";
       mysqli_query($con, $sql);
-      echo "<script>alert('注册成功！')</script>";
+      echo "<script>top.location.href='QRcode.html'</script>";
     }
   ?>
 </body>

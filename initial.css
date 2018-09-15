@@ -13,5 +13,5 @@ input[type="number"]{-moz-appearance: textfield;}
 body { margin: 0; }
 html { font-size: 100px; }
 body, html { height: 100%; }
-.app { width: 7.5rem; height: 100%; background-image: url("post.jpg"); background-size: cover; background-repeat: no-repeat;}
+.app { width: 7.5rem; height: 100%; background-image: url("post.png"); background-size: cover; background-repeat: no-repeat;}
 * { font-family: pfm; }
